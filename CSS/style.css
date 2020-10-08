@@ -213,10 +213,8 @@ nav a.active:active {
 
   .img-box {
     height: 400px;
-    }
   }
 }
-
 
 /*Projects-sidebar*/
 
@@ -245,6 +243,8 @@ aside {
   border-right: 2px white solid;
   border-left: 5px purple solid;
 }
+
+/*
 
 .sidebar a:hover {
   background-color: purple;

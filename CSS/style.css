@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: grey;
+}
+
+.margin {
+  margin: 10%;
+}
+
+/*Menu-horizontal*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 30px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#logo {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-right: auto;
+}
+
+nav a {
+  display: inline-block;
+  padding: 20px 30px;
+  margin-left: 5px;
+  border-bottom: 5px purple solid;
+  font-size: 16px;
+}
+
+nav a:hover {
+  background-color: purple;
+}
+
+nav a:active {
+  color: black;
+}
+
+nav a.active {
+  background-color: orange;
+  border-bottom: 5px orange solid;
+}
+
+nav a.active:active {
+  color: white;
+}
+
+@media screen and (max-width: 945px) {
+  header {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  #logo {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 14px;
+    border-bottom: 1px white solid;
+  }
+
+  nav a{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    border-bottom: 1px white solid;
+  }
+
+  nav a:hover{
+    background-color: purple;
+  }
+
+  nav a.active {
+    border: none;
+    background-color: orange;
+    border-bottom: 1px white solid;
+  }
+}
+
+/*Index-content*/
+
+.index {
+  width: 64%;
+  background-color: rgb(0,0,0,0.8);
+  padding: 10px;
+  margin-top: 124px;
+  margin-bottom: 80px;
+  margin-left: 18%;
+  height: 550px;
+  display: flex;
+}
+
+.column-1-welcome, .column-2-welcome {
+  width: 50%;
+  margin: 3%;
+}
+
+.welcome {
+  margin-top: 15%;
+  color: white;
+}
+
+.welcome h1 {
+  font-size: 48px;
+}
+
+.welcome p {
+  font-size: 24px;
+}
+
+.buttons {
+  margin-left: 7%;
+  margin-top: 15%;
+}
+
+.buttons .index-button {
+  padding: 12px 20px;
+  font-size: 98%;
+  border: 1px purple solid;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  margin-right: 7%;
+  margin-top: 6%;
+  min-width: 25%;
+}
+
+.buttons .index-button:hover {
+  background-color: orange;
+  border: 1px orange solid;
+}
+
+.buttons .index-button:active {
+  color: black;
+}
+
+.img-box {
+  display: block;
+  background-color: blue;
+  width: 100%;
+  height: 300px;
+}
+
+.img-text {
+  margin: 2%;
+  color: white;
+}
+
+@media screen and (max-width: 1417px) {
+  .index {
+    margin: 2%;
+    margin-top: 6.5%;
+    width: 96%;
+    flex-direction: column;
+    height: 90%;
+  }
+
+  .column-1-welcome {
+    width: 75%;
+    margin: 12.5%;
+    margin-top: 0;
+  }
+
+  .welcome h1 {
+    font-size: 2em;
+  }
+
+  .welcome p {
+    margin-top: -3%;
+    font-size: 100%;
+  }
+
+  .buttons {
+    margin-left: 0;
+    margin-top: 3%;
+  }
+
+  .buttons  .index-button {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 14px;
+  }
+
+  .column-2-welcome {
+    width: 75%;
+    margin: 12.5%;
+    margin-top: -4%;
+   }
+
+  .img-box {
+    height: 500px;
+  }
+}
+
+
+/*Projects-sidebar*/
+
+aside {
+  position: fixed;
+  top: 62px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.sidebar {
+  padding: 0;
+  margin: 0;
+  border-top: 2px white solid;
+}
+
+.sidebar a {
+  padding: 18px 30px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 16px;
+  background-color: black;
+  border-bottom: 2px white solid;
+  border-right: 2px white solid;
+  border-left: 5px purple solid;
+}
+
+.sidebar a:hover {
+  background-color: purple;
+}
+
+.sidebar a:active {
+  color: black;
+}
+
+.sidebar a.active {
+  background-color: orange;
+  border-left: 5px orange solid;
+  border-right: 1px orange solid;
+  border-right: 2px white solid;
+}
+
+.sidebar a.active:active {
+  color: white;
+}
+
+.space {
+  padding-bottom: 100%;
+  padding-top: 100%;
+  background-color: black;
+}
+
+@media screen and (max-width: 945px) {
+  aside {
+    position: relative;
+    margin-top: -64px;
+    display: block;
+    width: 100%;
+  }
+
+  .sidebar a{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    border-bottom: 1px white solid;
+    border-left: none;
+    border-right: none;
+    background-color: #383838;
+  }
+
+  .sidebar a:hover{
+    background-color: purple;
+  }
+
+  .sidebar a.active {
+    border: none;
+    background-color: orange;
+    border-bottom: 1px white solid;
+  }
+
+  .space{
+    display: none;
+  }
+}
+
+/*Projects-content*/
+
+.row-1, .row-2, .row-3 {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+
+.row-1 {
+  margin-top: 120px;
+}
+
+.project {
+  width: 30%;
+  height: 30%;
+  border: 1px black solid;
+  background-color: white;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 945px) {
+  .section {
+    margin-top: 63px
+  }
+
+  .row-1, .row-2, .row-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .row-1{
+    margin-top: 130px;
+  }
+
+  .project {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+
+  .project img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*About-content*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 63px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.container img {
+  width: 40%;
+  height: 40%;
+  margin-top: 25px;
+}
+
+.intro-header {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+  width: 50%;
+}
+
+.uddannelse ul, .fritid {
+  margin-left: -22px;
+}
+
+.uddannelse ul li, .fritid li {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1253px) {
+  .about {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .intro-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    order: 2;
+  }
+
+  .introduction {
+    width: 100p%;
+    order: 2;
+  }
+
+  .intro-header img {
+    order: 1;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .fritid li {
+    margin-top: 15px;
+  }
+}
+
+/*Contact-content*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 63px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.container input[type=text], .container select, .container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.container h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.container textarea {
+  height: 200px;
+}
+
+.container button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px purple solid;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  margin-left: 44.7%;
+}
+
+.container button:hover {
+  background: orange;
+  border: 1px orange solid;
+}
+
+.container button:active {
+  color: black;
+}
+
+@media screen and (max-width: 945px) {
+  .contact {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
